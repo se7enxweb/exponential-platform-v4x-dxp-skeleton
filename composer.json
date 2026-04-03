@@ -1,10 +1,10 @@
 {
-    "name": "se7enxweb/exponential-platform-dxp-skeleton",
+    "name": "se7enxweb/exponential-platform-v4x-dxp-skeleton",
     "type": "project",
     "license": "(GPL-2.0-or-later or proprietary)",
-    "description": "A project skeleton for installing 7x Exponential Platform DXP (Open Source)",
+    "description": "A project skeleton for installing 7x Exponential Platform v4.6.x DXP (Open Source)",
     "require": {
-        "php": ">=8.3",
+        "php": "^7.4 || ^8.0 || ^8.1 || ^8.2 || ^8.3 || ^8.4 || ^8.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-gd": "*",
@@ -15,14 +15,14 @@
         "ext-intl": "*",
         "ext-mbstring": "*",
         "nyholm/psr7": "^1.0",
-        "se7enxweb/exponential-platform-dxp": "dev-master",
+        "se7enxweb/exponential-platform-dxp": "dev-4.6",
         "symfony/flex": "^2",
-        "symfony/runtime": "^7.3"
+        "symfony/runtime": "^5.3"
     },
     "require-dev": {
-        "symfony/debug-bundle": "^7.3",
-        "symfony/stopwatch": "^7.3",
-        "symfony/web-profiler-bundle": "^7.3"
+        "symfony/debug-bundle": "^5.3",
+        "symfony/stopwatch": "^5.3",
+        "symfony/web-profiler-bundle": "^5.3"
     },
     "config": {
         "allow-plugins": {
@@ -81,7 +81,7 @@
             "docker": false
         },
         "branch-alias": {
-            "dev-master": "5.0.x-dev"
+            "dev-master": "4.6.0.x-dev"
         }
     }
 }
