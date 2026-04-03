@@ -1,4 +1,4 @@
-# Exponential Platform DXP (Stable; Open Source) skeleton
+# Exponential Platform v4.6.x DXP (Stable; Open Source) skeleton
 
 This is a website skeleton for Exponential Platform DXP (Stable; Open Source).
 
@@ -6,7 +6,7 @@ This is a website skeleton for Exponential Platform DXP (Stable; Open Source).
 
 Create a new project using composer:
     ```
-    composer create-project se7enxweb/exponential-platform-dxp-skeleton exponential_website
+    composer create-project se7enxweb/exponential-platform-v4x-dxp-skeleton exponential_website
     ```
 
 Learn more about our open source products - [Exponential Platform DXP](https://platform.exponential.earth).
