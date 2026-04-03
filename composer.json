@@ -15,7 +15,7 @@
         "ext-intl": "*",
         "ext-mbstring": "*",
         "nyholm/psr7": "^1.0",
-        "se7enxweb/exponential-platform-dxp": "4.6.0.x-dev",
+        "se7enxweb/exponential-platform-dxp": "4.6.x-dev",
         "symfony/flex": "^2",
         "symfony/runtime": "^5.3"
     },
@@ -81,7 +81,7 @@
             "docker": false
         },
         "branch-alias": {
-            "dev-master": "4.6.0.x-dev"
+            "dev-4.6": "4.6.0.x-dev"
         }
     }
 }
