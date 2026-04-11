@@ -236,7 +236,7 @@ project-root/
 ### 3a. Composer create-project (recommended)
 
 ```bash
-composer create-project se7enxweb/exponential-platform-v4x-dxp-skeleton:dev-master my-project
+composer create-project se7enxweb/exponential-platform-v4x-dxp-skeleton my-project
 cd my-project
 ```
 
@@ -250,7 +250,7 @@ Composer will:
 > 💾 **Git Save Point 1 — Project created**
 > ```bash
 > git init && git add -A
-> git commit -m "chore(init): composer create-project exponential-platform-v4x-dxp-skeleton dev-master"
+> git commit -m "chore(init): composer create-project exponential-platform-v4x-dxp-skeleton"
 > ```
 
 Continue from [Section 4](#4-environment-configuration-envlocal).
