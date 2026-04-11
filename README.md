@@ -299,11 +299,11 @@ php bin/console doctrine:schema:validate                          # validate ent
 ```bash
 php bin/console exponential:install exponential-oss                 # fresh install with demo data
 php bin/console exponential:install ibexa-oss                       # upstream install type
-php bin/console ezplatform:reindex                            # rebuild search index (full)
-php bin/console ezplatform:reindex --iteration-count=50       # incremental reindex
-php bin/console ezplatform:cron:run                           # run the Platform v4 cron scheduler
+php bin/console exponential:reindex                           # rebuild search index (full)
+php bin/console exponential:reindex --iteration-count=50      # incremental reindex
+php bin/console ibexa:cron:run                                # run the Platform v4 cron scheduler
 php bin/console ibexa:graphql:generate-schema                 # regenerate GraphQL schema
-php bin/console ezplatform:solr:create-core --cores=default   # set up Solr core
+# Solr core provisioning: use Solr Admin UI (http://localhost:8983/solr/#/~cores) or solr CLI
 php bin/console bazinga:js-translation:dump public/assets --merge-domains   # JS i18n
 php bin/console fos:httpcache:invalidate:path / --all         # purge HTTP cache paths
 php bin/console lexik:jwt:generate-keypair                    # generate RSA keypair for REST API auth

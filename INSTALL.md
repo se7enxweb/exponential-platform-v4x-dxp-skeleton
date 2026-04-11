@@ -325,7 +325,7 @@ php bin/console cache:clear
 #### Step 10 — Reindex search
 
 ```bash
-php bin/console ezplatform:reindex
+php bin/console exponential:reindex
 ```
 
 > 💾 **Git Save Point 2 — Installation complete**
@@ -748,19 +748,19 @@ php bin/console ibexa:graphql:generate-schema
 ### Full reindex
 
 ```bash
-php bin/console ezplatform:reindex
+php bin/console exponential:reindex
 ```
 
 ### Incremental reindex
 
 ```bash
-php bin/console ezplatform:reindex --iteration-count=100
+php bin/console exponential:reindex --iteration-count=100
 ```
 
 ### Reindex a specific content type
 
 ```bash
-php bin/console ezplatform:reindex --content-type=article
+php bin/console exponential:reindex --content-type=article
 ```
 
 ---
@@ -907,7 +907,7 @@ php bin/console cache:clear --env=prod
 php bin/console cache:warmup --env=prod
 
 # 9. Reindex search (if content model changed)
-# php bin/console ezplatform:reindex --env=prod
+# php bin/console exponential:reindex --env=prod
 ```
 
 ---
@@ -932,7 +932,7 @@ composer update se7enxweb/exponential-platform-dxp
 # After update, always run:
 php bin/console doctrine:migration:migrate --allow-no-migration
 php bin/console cache:clear
-php bin/console ezplatform:reindex
+php bin/console exponential:reindex
 ```
 
 ### Update Node packages
@@ -950,7 +950,7 @@ Add to crontab (`crontab -e -u www-data`):
 
 ```cron
 # Platform v4 cron runner (every 5 minutes)
-*/5 * * * * /usr/bin/php /var/www/exponential/bin/console ezplatform:cron:run --env=prod >> /var/log/exponential-cron.log 2>&1
+*/5 * * * * /usr/bin/php /var/www/exponential/bin/console ibexa:cron:run --env=prod >> /var/log/exponential-cron.log 2>&1
 ```
 
 ---
@@ -961,13 +961,10 @@ Add to crontab (`crontab -e -u www-data`):
 
 1. Set `SEARCH_ENGINE=solr` and `SOLR_DSN`/`SOLR_CORE` in `.env.local`
 2. Clear cache: `php bin/console cache:clear`
-3. Provision the Solr core:
-   ```bash
-   php bin/console ezplatform:solr:create-core --cores=default
-   ```
+3. Provision the Solr core via the Solr Admin UI (`http://localhost:8983/solr/#/~cores`) or the Solr CLI (`solr create -c default`)
 4. Reindex all content:
    ```bash
-   php bin/console ezplatform:reindex
+   php bin/console exponential:reindex
    ```
 
 ### Switch back to legacy search
@@ -1050,7 +1047,7 @@ php bin/console cache:clear
 ### Search results outdated
 
 ```bash
-php bin/console ezplatform:reindex
+php bin/console exponential:reindex
 ```
 
 ### Permission denied on var/ or public/var/
@@ -1659,7 +1656,7 @@ php bin/console doctrine:migration:migrate --allow-no-migration
 php bin/console ibexa:graphql:generate-schema
 
 # 6. Regenerate the search index against the new DB
-php bin/console ezplatform:reindex
+php bin/console exponential:reindex
 
 # 7. Smoke-test the site
 curl -I http://localhost/
@@ -1725,15 +1722,15 @@ php bin/console doctrine:database:drop --force                    # drop the dat
 ### 22.3 Platform v4 New Stack
 
 ```bash
-php bin/console exponential:install exponential-oss                 # schema + demo data
-php bin/console exponential:install ibexa-oss                       # upstream install type
-php bin/console ezplatform:reindex                            # full reindex
-php bin/console ezplatform:reindex --iteration-count=100      # incremental
-php bin/console ezplatform:reindex --content-type=article     # one content type
-php bin/console ezplatform:solr:create-core --cores=default   # provision Solr core
-php bin/console ezplatform:content:cleanup-drafts             # remove stale drafts
-php bin/console ezplatform:content:cleanup-versions --keep=3  # keep last N per content
-php bin/console ezplatform:cron:run                           # run Platform v4 cron scheduler
+php bin/console exponential:install exponential-oss                        # schema + demo data
+php bin/console exponential:install ibexa-oss                              # upstream install type
+php bin/console exponential:reindex                                        # full reindex
+php bin/console exponential:reindex --iteration-count=100                  # incremental
+php bin/console exponential:reindex --content-type=article                 # one content type
+# Solr core provisioning: Solr Admin UI (http://localhost:8983/solr/#/~cores) or solr create -c default
+php bin/console exponential:content:cleanup-versions --status=draft        # remove stale drafts
+php bin/console exponential:content:cleanup-versions --keep=3              # keep last N per content
+php bin/console ibexa:cron:run                                             # run Platform v4 cron scheduler
 php bin/console ibexa:graphql:generate-schema                 # regenerate from content model
 php bin/console fos:httpcache:invalidate:path / --all         # purge all HTTP cache paths
 php bin/console fos:httpcache:invalidate:tag <tag>            # purge by cache tag
