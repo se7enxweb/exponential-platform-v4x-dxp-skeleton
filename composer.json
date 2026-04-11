@@ -15,7 +15,7 @@
         "ext-intl": "*",
         "ext-mbstring": "*",
         "nyholm/psr7": "^1.0",
-        "se7enxweb/exponential-platform-dxp": "dev-4.6",
+        "se7enxweb/exponential-platform-dxp": "4.6.x-dev",
         "symfony/flex": "^2",
         "symfony/runtime": "^5.3"
     },
