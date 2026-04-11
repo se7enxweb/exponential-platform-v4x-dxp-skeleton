@@ -159,7 +159,7 @@ cp .env .env.local
 # MySQL/MariaDB first:
 mysql -u root -p -e "CREATE DATABASE exponential CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;"
 # Then install:
-php bin/console ibexa:install --no-interaction
+php bin/console exponential:install --no-interaction
 
 # 4. Set permissions
 setfacl -R -m u:www-data:rwX -m g:www-data:rwX var public/var
@@ -297,8 +297,8 @@ php bin/console doctrine:schema:validate                          # validate ent
 ### Exponential Platform v4
 
 ```bash
-php bin/console ibexa:install exponential-oss                 # fresh install with demo data
-php bin/console ibexa:install ibexa-oss                       # upstream install type
+php bin/console exponential:install exponential-oss                 # fresh install with demo data
+php bin/console exponential:install ibexa-oss                       # upstream install type
 php bin/console ezplatform:reindex                            # rebuild search index (full)
 php bin/console ezplatform:reindex --iteration-count=50       # incremental reindex
 php bin/console ezplatform:cron:run                           # run the Platform v4 cron scheduler
