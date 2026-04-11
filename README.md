@@ -146,7 +146,7 @@ Exponential Platform DXP is database, platform and browser independent. Because 
 
 ```bash
 # 1. Create project
-composer create-project se7enxweb/exponential-platform-v4x-dxp-skeleton:4.6.x-dev exponential_website
+composer create-project se7enxweb/exponential-platform-v4x-dxp-skeleton exponential_website
 cd exponential_website
 
 # 2. Configure environment
@@ -239,7 +239,7 @@ symfony server:start
 Create a new project using Composer:
 
 ```bash
-composer create-project se7enxweb/exponential-platform-v4x-dxp-skeleton:4.6.x-dev exponential_website
+composer create-project se7enxweb/exponential-platform-v4x-dxp-skeleton exponential_website
 ```
 
 The installation guide covers:
