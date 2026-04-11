@@ -467,7 +467,7 @@ psql -U postgres -c "CREATE DATABASE exponential ENCODING 'UTF8';"
 ### Import schema and demo data
 
 ```bash
-php bin/console ibexa:install exponential-oss
+php bin/console exponential:install exponential-oss
 ```
 
 The demo data creates an administrator user:
@@ -508,7 +508,7 @@ MESSENGER_TRANSPORT_DSN=sync://
 #### Step 3 — Run the install command
 
 ```bash
-php bin/console ibexa:install exponential-oss
+php bin/console exponential:install exponential-oss
 ```
 
 #### Step 4 — Fix file permissions
@@ -1725,8 +1725,8 @@ php bin/console doctrine:database:drop --force                    # drop the dat
 ### 22.3 Platform v4 New Stack
 
 ```bash
-php bin/console ibexa:install exponential-oss                 # schema + demo data
-php bin/console ibexa:install ibexa-oss                       # upstream install type
+php bin/console exponential:install exponential-oss                 # schema + demo data
+php bin/console exponential:install ibexa-oss                       # upstream install type
 php bin/console ezplatform:reindex                            # full reindex
 php bin/console ezplatform:reindex --iteration-count=100      # incremental
 php bin/console ezplatform:reindex --content-type=article     # one content type
