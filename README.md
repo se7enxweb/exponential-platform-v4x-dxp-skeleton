@@ -3,9 +3,9 @@
 [![PHP](https://img.shields.io/badge/PHP-8.0%20→%208.5-8892BF?logo=php&logoColor=white)](https://php.net)
 [![Symfony](https://img.shields.io/badge/Symfony-5.4%20LTS-000000?logo=symfony&logoColor=white)](https://symfony.com)
 [![Platform](https://img.shields.io/badge/Platform-4.6%20OSS-orange)](https://github.com/se7enxweb)
-[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/gpl-2.0)
-[![GitHub issues](https://img.shields.io/github/issues/se7enxweb/exponential-platform-dxp-skeleton)](https://github.com/se7enxweb/exponential-platform-dxp-skeleton/issues)
-[![GitHub stars](https://img.shields.io/github/stars/se7enxweb/exponential-platform-dxp-skeleton?style=social)](https://github.com/se7enxweb/exponential-platform-dxp-skeleton)
+[![License: GPL v2 (or any later version)](https://img.shields.io/badge/License-GPL%20v2%20(or%20any%20later%20version)-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+[![GitHub issues](https://img.shields.io/github/issues/se7enxweb/exponential-platform-v4x-dxp-skeleton)](https://github.com/se7enxweb/exponential-platform-v4x-dxp-skeleton/issues)
+[![GitHub stars](https://img.shields.io/github/stars/se7enxweb/exponential-platform-v4x-dxp-skeleton?style=social)](https://github.com/se7enxweb/exponential-platform-v4x-dxp-skeleton)
 
 > **Exponential Platform DXP** is an open-source Digital Experience Platform (DXP/CMS) built on **Symfony 5.4 LTS** with full PHP 8.x compatibility. This is the **DXP skeleton** — the standard, single-kernel Exponential Platform v4 project template.
 
@@ -342,7 +342,7 @@ yarn ibexa:build        # build Platform v4 Admin UI assets — production
 ## Issue Tracker
 
 Submitting bugs, improvements and stories is possible on
-[https://github.com/se7enxweb/exponential-platform-dxp-skeleton/issues](https://github.com/se7enxweb/exponential-platform-dxp-skeleton/issues)
+[https://github.com/se7enxweb/exponential-platform-v4x-dxp-skeleton/issues](https://github.com/se7enxweb/exponential-platform-v4x-dxp-skeleton/issues)
 
 If you discover a [security issue](SECURITY.md), please responsibly report such issues via email to security@exponential.one
 
@@ -356,9 +356,9 @@ If you discover a [security issue](SECURITY.md), please responsibly report such 
 | Documentation Hub | [doc.exponential.earth](https://doc.exponential.earth) |
 | Community Forums | [share.exponential.earth](https://share.exponential.earth) |
 | GitHub Organisation | [github.com/se7enxweb](https://github.com/se7enxweb) |
-| This Repository | [github.com/se7enxweb/exponential-platform-dxp-skeleton](https://github.com/se7enxweb/exponential-platform-dxp-skeleton) |
-| Issue Tracker | [Issues](https://github.com/se7enxweb/exponential-platform-dxp-skeleton/issues) |
-| Discussions | [Discussions](https://github.com/se7enxweb/exponential-platform-dxp-skeleton/discussions) |
+| This Repository | [github.com/se7enxweb/exponential-platform-v4x-dxp-skeleton](https://github.com/se7enxweb/exponential-platform-v4x-dxp-skeleton) |
+| Issue Tracker | [Issues](https://github.com/se7enxweb/exponential-platform-v4x-dxp-skeleton/issues) |
+| Discussions | [Discussions](https://github.com/se7enxweb/exponential-platform-v4x-dxp-skeleton/discussions) |
 | Telegram Chat | [t.me/exponentialcms](https://t.me/exponentialcms) |
 | Discord | [discord.gg/exponential](https://discord.gg/exponential) |
 | 7x Corporate | [se7enx.com](https://se7enx.com) |
@@ -373,7 +373,7 @@ Everyone is encouraged to [contribute](CONTRIBUTING.md) to the development of ne
 
 **Getting started as a contributor:**
 
-1. **Fork** the repository on GitHub: [github.com/se7enxweb/exponential-platform-dxp-skeleton](https://github.com/se7enxweb/exponential-platform-dxp-skeleton)
+1. **Fork** the repository on GitHub: [github.com/se7enxweb/exponential-platform-v4x-dxp-skeleton](https://github.com/se7enxweb/exponential-platform-v4x-dxp-skeleton)
 2. **Clone** your fork and create a feature branch: `git checkout -b feature/my-improvement`
 3. **Install** the full dev stack per [INSTALL.md](INSTALL.md) (`APP_ENV=dev`)
 4. **Make** your changes — follow coding standards in [CONTRIBUTING.md](CONTRIBUTING.md)
@@ -381,7 +381,7 @@ Everyone is encouraged to [contribute](CONTRIBUTING.md) to the development of ne
 6. **Push** your branch and open a **Pull Request** against the `4.6` branch
 7. **Participate** in the review — maintainers will give feedback promptly
 
-Bug reports, feature requests, and discussion are all welcome via the [issue tracker](https://github.com/se7enxweb/exponential-platform-dxp-skeleton/issues) and [GitHub Discussions](https://github.com/se7enxweb/exponential-platform-dxp-skeleton/discussions).
+Bug reports, feature requests, and discussion are all welcome via the [issue tracker](https://github.com/se7enxweb/exponential-platform-v4x-dxp-skeleton/issues) and [GitHub Discussions](https://github.com/se7enxweb/exponential-platform-v4x-dxp-skeleton/discussions).
 
 ---
 

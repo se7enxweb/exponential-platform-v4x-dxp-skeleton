@@ -260,8 +260,8 @@ Continue from [Section 4](#4-environment-configuration-envlocal).
 ### 3b. GitHub git clone (developers)
 
 ```bash
-git clone git@github.com:se7enxweb/exponential-platform-dxp-skeleton.git
-cd exponential-platform-dxp-skeleton
+git clone git@github.com:se7enxweb/exponential-platform-v4x-dxp-skeleton.git
+cd exponential-platform-v4x-dxp-skeleton
 git checkout 4.6
 ```
 
