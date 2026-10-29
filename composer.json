@@ -18,7 +18,8 @@
         "se7enxweb/exponential-platform-dxp": "4.6.x-dev",
         "symfony/flex": "^1.21 || ^2",
         "symfony/runtime": "^5.3",
-        "se7enxweb/twig": "~3.11.4 || ~3.19.1"
+        "se7enxweb/twig": "~3.11.4 || ~3.19.1",
+        "se7enxweb/exponential-platform-dxp-php-floor": "^1.0"
     },
     "require-dev": {
         "symfony/debug-bundle": "^5.3",
@@ -57,7 +58,10 @@
                     "PKSA-fbvq-z33h-r2np": "CVE-2026-48808 on twig/twig: Fixed in se7enxweb/twig 3.11.4, which backports the upstream fix of Twig 3.27.0 to the 3.11 line (the column filter checks the policy directly, so a source-policy sandbox applies). Also: CVE-2026-48808 on twig/twig: Fixed in se7enxweb/twig 3.19.1, which backports the upstream fix of Twig 3.27.0 to the 3.19 line (the column filter checks the policy directly, so a source-policy sandbox applies).",
                     "PKSA-8zx5-v2nz-58pb": "CVE-2026-49981 on twig/twig: Fixed in se7enxweb/twig 3.11.4, which backports the upstream fix of Twig 3.27.0 to the 3.11 line (compiled templates check the allow-lists on every render; GitHub advisory for the same issue as CVE-2026-46636). Also: CVE-2026-49981 on twig/twig: Fixed in se7enxweb/twig 3.19.1, which backports the upstream fix of Twig 3.27.0 to the 3.19 line (compiled templates check the allow-lists on every render; GitHub advisory for the same issue as CVE-2026-46636).",
                     "PKSA-5k7f-wvjj-jrgw": "CVE-2026-46640 on twig/twig: Fixed in se7enxweb/twig 3.19.1, which backports the upstream fix of Twig 3.26.0 to the 3.19 line (_self and imported macro references accept only valid PHP identifiers, and MacroReferenceExpression validates the name).",
-                    "PKSA-w9tt-7782-78jx": "CVE-2026-102601 on league/flysystem: Fixed in se7enxweb/flysystem 2.5.1, which backports the upstream fix to the 2.x line it replaces league/flysystem with (WhitespacePathNormalizer treats a path with malformed UTF-8 as corrupted, as 3.35.3 does)."
+                    "PKSA-w9tt-7782-78jx": "CVE-2026-102601 on league/flysystem: Fixed in se7enxweb/flysystem 2.5.1, which backports the upstream fix to the 2.x line it replaces league/flysystem with (WhitespacePathNormalizer treats a path with malformed UTF-8 as corrupted, as 3.35.3 does).",
+                    "PKSA-xwpn-zs9j-6wy5": "GHSA-r7cg-qjjm-xhqq on webonyx/graphql-php: Fixed in se7enxweb/graphql-php 14.11.11, which backports the upstream fix of 15.32.3 to the 14.11 line it replaces webonyx/graphql-php with (the parser bounds the nesting of selection sets, value literals and type references to 256 levels).",
+                    "PKSA-sf9j-1gs7-xzvx": "GHSA-fc86-6rv6-2jpm on webonyx/graphql-php: Fixed in se7enxweb/graphql-php 14.11.11, which backports the upstream fix of 15.32.2 to the 14.11 line it replaces webonyx/graphql-php with (OverlappingFieldsCanBeMerged stops after 100000 field comparisons per document).",
+                    "PKSA-7h5p-prw9-w5nr": "CVE-2026-40476 on webonyx/graphql-php: Fixed in se7enxweb/graphql-php 14.11.11, which backports the upstream fix of 15.31.5 to the 14.11 line it replaces webonyx/graphql-php with (OverlappingFieldsCanBeMerged compares structurally identical fields once)."
                 }
             }
         },
@@ -80,7 +84,10 @@
                 "PKSA-fbvq-z33h-r2np": "CVE-2026-48808 on twig/twig: Fixed in se7enxweb/twig 3.11.4, which backports the upstream fix of Twig 3.27.0 to the 3.11 line (the column filter checks the policy directly, so a source-policy sandbox applies). Also: CVE-2026-48808 on twig/twig: Fixed in se7enxweb/twig 3.19.1, which backports the upstream fix of Twig 3.27.0 to the 3.19 line (the column filter checks the policy directly, so a source-policy sandbox applies).",
                 "PKSA-8zx5-v2nz-58pb": "CVE-2026-49981 on twig/twig: Fixed in se7enxweb/twig 3.11.4, which backports the upstream fix of Twig 3.27.0 to the 3.11 line (compiled templates check the allow-lists on every render; GitHub advisory for the same issue as CVE-2026-46636). Also: CVE-2026-49981 on twig/twig: Fixed in se7enxweb/twig 3.19.1, which backports the upstream fix of Twig 3.27.0 to the 3.19 line (compiled templates check the allow-lists on every render; GitHub advisory for the same issue as CVE-2026-46636).",
                 "PKSA-5k7f-wvjj-jrgw": "CVE-2026-46640 on twig/twig: Fixed in se7enxweb/twig 3.19.1, which backports the upstream fix of Twig 3.26.0 to the 3.19 line (_self and imported macro references accept only valid PHP identifiers, and MacroReferenceExpression validates the name).",
-                "PKSA-w9tt-7782-78jx": "CVE-2026-102601 on league/flysystem: Fixed in se7enxweb/flysystem 2.5.1, which backports the upstream fix to the 2.x line it replaces league/flysystem with (WhitespacePathNormalizer treats a path with malformed UTF-8 as corrupted, as 3.35.3 does)."
+                "PKSA-w9tt-7782-78jx": "CVE-2026-102601 on league/flysystem: Fixed in se7enxweb/flysystem 2.5.1, which backports the upstream fix to the 2.x line it replaces league/flysystem with (WhitespacePathNormalizer treats a path with malformed UTF-8 as corrupted, as 3.35.3 does).",
+                "PKSA-xwpn-zs9j-6wy5": "GHSA-r7cg-qjjm-xhqq on webonyx/graphql-php: Fixed in se7enxweb/graphql-php 14.11.11, which backports the upstream fix of 15.32.3 to the 14.11 line it replaces webonyx/graphql-php with (the parser bounds the nesting of selection sets, value literals and type references to 256 levels).",
+                "PKSA-sf9j-1gs7-xzvx": "GHSA-fc86-6rv6-2jpm on webonyx/graphql-php: Fixed in se7enxweb/graphql-php 14.11.11, which backports the upstream fix of 15.32.2 to the 14.11 line it replaces webonyx/graphql-php with (OverlappingFieldsCanBeMerged stops after 100000 field comparisons per document).",
+                "PKSA-7h5p-prw9-w5nr": "CVE-2026-40476 on webonyx/graphql-php: Fixed in se7enxweb/graphql-php 14.11.11, which backports the upstream fix of 15.31.5 to the 14.11 line it replaces webonyx/graphql-php with (OverlappingFieldsCanBeMerged compares structurally identical fields once)."
             }
         }
     },
@@ -112,7 +119,8 @@
         ]
     },
     "conflict": {
-        "symfony/symfony": "*"
+        "symfony/symfony": "*",
+        "webonyx/graphql-php": "<14.11.11 || >=15.0 <15.32.3"
     },
     "minimum-stability": "dev",
     "prefer-stable": false,
