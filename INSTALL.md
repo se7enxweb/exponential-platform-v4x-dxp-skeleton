@@ -1788,5 +1788,5 @@ symfony check:security                 # audit composer.lock for known CVEs
 
 ---
 
-*Copyright &copy; 1998 – 2026 7x (se7enx.com). All rights reserved unless otherwise noted.*
+*Copyright &copy; 1998 – 2026 Exponential Foundation and 7x (se7enx.com). All rights reserved unless otherwise noted.*
 *Exponential Platform DXP is Open Source software released under the GNU GPL v2 or any later version.*
